@@ -1,0 +1,10 @@
+﻿Name;Description
+Subaccount Viewer;Read-only access to the subaccount
+Subaccount Service Administrator;Administrative access to service brokers and environments on a subaccount level.
+Destination Administrator;"Manage the destination configurations, certificates and subaccount trust."
+Connectivity and Destination Administrator;"Operate the data transmission tunnels used by the Cloud Connector and manage the destination configurations, certificates and subaccount trust."
+Cloud Connector Administrator;Operate the data transmission tunnels used by the Cloud Connector.
+Business_Application_Studio_Extension_Deployer;Allows extension developers to deploy simple extensions.
+Business_Application_Studio_Developer;Allows developers to load and develop applications using SAP Business Application Studio.
+Business_Application_Studio_Administrator;Allows administrators to manage (export and delete) user data.
+Subaccount Administrator;Administrative access to the subaccount

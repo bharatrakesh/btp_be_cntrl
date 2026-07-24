@@ -1,0 +1,32 @@
+
+GET  http://localhost:4004/odata/v4/controllerservice/assesment
+
+
+### get output
+
+POST http://localhost:4004/odata/v4/controllerservice/mediaFile 
+Content-Type: application/json
+
+{
+  "fileName": "test.pdf",
+  "fileType": "pdf"
+}
+
+### update the above cretaed row with file
+PUT http://localhost:4004/odata/v4/controllerservice/mediaFile('5c26f676-8e68-4652-ba7c-3653311db960')/fileContent
+
+Content-Type: application/json
+
+< ./test/data.csv
+
+###getting v2 version of service
+
+GET http://localhost:4004/v2/odata/v4/controllerservice/$metadata        
+
+### saving file using V2 service
+POST http://localhost:4004/v2/odata/v4/controllerservice/mediaFile
+slug: test1.pdf
+Content-Type:application/pdf
+
+<./test/Holiday Calendar 2026.pdf
+
