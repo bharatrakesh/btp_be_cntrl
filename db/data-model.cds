@@ -23,6 +23,7 @@ entity OUTPUT_DATA {
          DEPARTMENT : String(30);
 }
 
+// Media entity for storing media files for the assessment entity. The media entity is linked to the assessment entity via a foreign key relationship. The media entity contains fields for storing the file name, media type, and file content. The media type field is mandatory for the media entity, and the file content field is of type LargeBinary to store binary data.
 entity mediaFile : cuid {
      
      @Core.ContentDisposition.Filename : fileName
