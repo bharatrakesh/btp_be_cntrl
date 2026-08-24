@@ -3,12 +3,12 @@ const lo_actionHandler = require('./ActionHandler');
 
 module.exports = cds.service.impl(srv => {
 
-    // implement the action Handler
+    // implement the action Handler which is added in the data-service.cds file
     srv.on('MarkasObsolete', lo_actionHandler.MarkasObsolete);
 
 
     srv.on('READ', 'outputdata', async (req, next) => {
-       //  const db = await cds.connect.to('db');
+        //  const db = await cds.connect.to('db');
         // const tx = db.transaction(req);
         // const result = await tx.run(SELECT.from('contrlns.OUTPUT_DATA'));
         //connect to the db Table 
@@ -22,7 +22,7 @@ module.exports = cds.service.impl(srv => {
             output.push(element);
         });
 
-return output;
+        return output;
 
 
         //  console.log("i am in controller.js");
